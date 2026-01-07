@@ -158,6 +158,7 @@ pagination:
               <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
               {% unless forloop.last %}
                 &nbsp;
+        w
               {% endunless %}
               {% endfor %}
           {% endif %}
