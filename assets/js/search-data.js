@@ -37,15 +37,15 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-when-learning-breaks",
+        },{id: "post-why-you-39-re-incredibly-right-in-being-wrong",
         
-          title: "When Learning Breaks",
+          title: "Why you&#39;re incredibly right in being wrong",
         
-        description: "How success quietly redefines itself once feedback becomes opaque.",
+        description: "Where rationality starts to break down.",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/collective_misoptimization/";
+            window.location.href = "/blog/2025/correctness_vs_coherence/";
           
         },
       },{id: "post-expertise-is-not-optional",
