@@ -24,8 +24,8 @@ ninja.data = [{
             window.location.href = "/publications/";
           },
         },{id: "nav-projects",
-          title: "projects",
-          description: "A growing collection of your cool projects.",
+          title: "Projects",
+          description: "A humble collection of all my projects worth sharing (Under construction).",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -70,11 +70,16 @@ ninja.data = [{
             window.location.href = "/blog/2025/linoss/";
           
         },
-      },{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+      },{id: "projects-a-foundational-model-for-tennis-players",
+          title: 'A Foundational Model for Tennis Players',
+          description: "A personal project with ambition.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
+            },},{id: "projects-resolution-invariant-image-segmentation-for-tumor-detection",
+          title: 'Resolution Invariant Image Segmentation for Tumor Detection',
+          description: "A research project in collaboration with the NKI.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_project/";
             },},{
         id: 'social-cv',
         title: 'CV',
