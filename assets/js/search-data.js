@@ -80,6 +80,11 @@ ninja.data = [{
           description: "A research project in collaboration with the NKI.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
+            },},{id: "projects-puzzle",
+          title: 'PUZZLE',
+          description: "Proximity-based Unsupervised Zonal Zones Learnable Embeddings for the province of Zuid-Holland",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_project/";
             },},{
         id: 'social-cv',
         title: 'CV',
