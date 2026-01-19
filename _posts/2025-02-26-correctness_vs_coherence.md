@@ -170,8 +170,8 @@ We experience truth as the absence of internal friction, as reality behaving the
 
 What emerges is not irrationality, and whether a belief survives or collapses depends not only on its correctness, but on how much prediction error it generates under available feedback. 
 
-In the absolute dark, coherence is not a failure mode. 
+In the absolute dark, coherence is not a failure mode. **It is the default mode.**
 
-**It is the only signal left.**
+
 
 
