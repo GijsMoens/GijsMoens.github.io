@@ -70,8 +70,8 @@ ninja.data = [{
             window.location.href = "/blog/2025/linoss/";
           
         },
-      },{id: "projects-a-foundational-model-for-tennis-players",
-          title: 'A Foundational Model for Tennis Players',
+      },{id: "projects-a-foundation-model-for-tennis-players",
+          title: 'A Foundation Model for Tennis Players',
           description: "A spatiotemporal equilibrium approach to latent performance modeling.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
