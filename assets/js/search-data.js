@@ -72,7 +72,7 @@ ninja.data = [{
         },
       },{id: "projects-a-foundational-model-for-tennis-players",
           title: 'A Foundational Model for Tennis Players',
-          description: "A personal project with ambition.",
+          description: "A spatiotemporal equilibrium approach to latent performance modeling.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-resolution-invariant-image-segmentation-for-tumor-detection",
