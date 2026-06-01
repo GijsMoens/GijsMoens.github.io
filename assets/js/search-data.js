@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-why-you-39-re-incredibly-right-in-being-wrong",
+        },{id: "post-polarisation-as-dimensionality-collapse",
+        
+          title: "Polarisation as Dimensionality Collapse",
+        
+        description: "Polarisation is not disagreement. It is what happens when high-dimensional human beings are compressed into low-dimensional symbolic systems and then judged as if the projection were the person.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/dimensionality_collapse/";
+          
+        },
+      },{id: "post-why-you-39-re-incredibly-right-in-being-wrong",
         
           title: "Why you&#39;re incredibly right in being wrong",
         
