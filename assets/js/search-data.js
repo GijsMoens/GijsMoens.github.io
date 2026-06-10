@@ -81,14 +81,17 @@ ninja.data = [{
             window.location.href = "/blog/2025/linoss/";
           
         },
-      },{id: "projects-a-foundation-model-for-tennis-players",
+      },{id: "news-our-paper-sonic-spectral-oriented-neural-invariant-convolutions-has-been-accepted-at-iclr-2026-preprint-on-arxiv",
+          title: 'Our paper SONIC: Spectral Oriented Neural Invariant Convolutions has been accepted at ICLR...',
+          description: "",
+          section: "News",},{id: "projects-a-foundation-model-for-tennis-players",
           title: 'A Foundation Model for Tennis Players',
           description: "A spatiotemporal equilibrium approach to latent performance modeling.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-resolution-invariant-image-segmentation-for-tumor-detection",
           title: 'Resolution Invariant Image Segmentation for Tumor Detection',
-          description: "A research project in collaboration with the NKI.",
+          description: "SONIC — accepted at ICLR 2026. A research project in collaboration with the NKI.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-puzzle",
