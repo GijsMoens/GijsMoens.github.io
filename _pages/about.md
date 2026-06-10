@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>27 Year</p>
-    <p>Machine Learning Engineer</p>
+    <p>AI Researcher</p>
     <p>Amsterdam, The Netherlands</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
@@ -27,11 +27,11 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I’m Gijs Moens, an AI researcher and solutions architect based in Amsterdam, working at the intersection of theory, engineering, and real-world impact. My background blends artificial intelligence, applied mathematics, and organizational decision-making.
+I’m Gijs Moens, an AI researcher based in Amsterdam. My work sits at the intersection of geometric deep learning, signal processing, and real-world deployment.
 
-I’m currently a researcher at the Netherlands Cancer Institute, where I work on improving prostate MRI segmentation using spectral oriented neural invariant convolutions. Alongside this, I serve as Lead AI Solutions Architect for the Province of South Holland, bridging policy and compliance needs with practical, responsible AI systems.
+I’m currently a researcher at the Netherlands Cancer Institute, where I developed [SONIC](https://arxiv.org/abs/2601.19884) (Spectral Oriented Neural Invariant Convolutions), a continuous spectral approach to resolution-invariant image segmentation, accepted at **ICLR 2026**. The core idea: operate in the Fourier domain with learnable oriented spectral modes instead of fixed-size kernels, giving you global receptive fields and resolution invariance with an order of magnitude fewer parameters.
 
-My academic foundation includes an MSc in Artificial Intelligence from the University of Amsterdam where I’m particularly interested in models that respect neurobiological principles and I enjoy exploring how these ideas can lead to more efficient, generalizable, and interpretable AI systems that align better with human cognition.
+Alongside research, I lead a small AI R&D team at the Province of South Holland, where I architect compliance analytics systems and bridge policy requirements with practical ML solutions. Before that, I spent two years in financial compliance, which gave me an unusual appreciation for how models behave when the stakes are real and the data is messy.
 
-Technically, I work primarily in Python and C++, with experience across PyTorch, JAX, CUDA, and cloud-native tooling and I care deeply about clarity, robustness, and intellectual honesty in both code and communication.
+I hold an MSc in Artificial Intelligence from the University of Amsterdam (GPA: 8.2/10, focus on geometric deep learning and signal processing) and a BSc in Business Analytics from the VU. I work primarily in Python and C++, with experience across PyTorch, JAX, and CUDA.
 

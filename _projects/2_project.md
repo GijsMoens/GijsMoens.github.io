@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Resolution Invariant Image Segmentation for Tumor Detection
-description: A research project in collaboration with the NKI.
+description: SONIC — accepted at ICLR 2026. A research project in collaboration with the NKI.
 img: assets/img/medical_segmentation.jpg
 importance: 1
 category: work
@@ -196,7 +196,7 @@ Below the left of the two is the nnU-Net, the right is our model.
 - Noise
 - Combined distortions
 
-Currently, we are looking into using the model for computer vision benchmarks as well, testing the limits of this approach.
+This work was accepted at **ICLR 2026**. We are currently extending the approach to general computer vision benchmarks, testing the limits of spectral convolutions beyond medical imaging.
 
 ---
 
@@ -211,7 +211,7 @@ Is it perfect? No.
 - FFTs add overhead
 - Very fine local detail can still benefit from spatial convolutions
 - Hybrid models are probably the future
-- Need to see if it holds on computer vision benchmarks
+- Extending to general computer vision benchmarks
 
-But as a *core operator*, this feels aligned with the physics of imaging rather than arbitrariness of our data representation.
+But as a *core operator*, this feels aligned with the physics of imaging rather than the arbitrariness of our data representation.
 

@@ -20,9 +20,9 @@ Assume the real world can be thought of as an unknown state space $$ \mathcal{W}
 
 In practice, policy systems lean heavily on **semantic structure** (zones, regions, categories, labels) because they’re easy to communicate and reason about. The underlying structure of $$ \mathcal{W} $$ ends up being represented by boundaries we define, rather than relationships that emerge on their own. We are transforming a complex world into the language domain and this transformation is imperfect and lossy by nature.
 
-Data-driven approaches move things closer to observation by relying on measurable signals, but they still operate within a limited feature space $$ \mathcal{X} \subseteq \mathcal{W} $$. That space is shaped by what’s observable and interpretable, so learning naturally gravitates toward familiarities. There is this baked in assumptions coming from our vision of the world but what if we could break free from it?
+Data-driven approaches move things closer to observation by relying on measurable signals, but they still operate within a limited feature space $$ \mathcal{X} \subseteq \mathcal{W} $$. That space is shaped by what’s observable and interpretable, so learning naturally gravitates toward familiarities. There are these baked-in assumptions coming from our vision of the world, but what if we could break free from them?
 
-The idea explored here is a shift in how we represent space and structure. We want to move out of the language domain and into a mathematical one.In these spaces, similarity is something you infer, not something you name.
+The idea explored here is a shift in how we represent space and structure. We want to move out of the language domain and into a mathematical one. In these spaces, similarity is something you infer, not something you name.
 
 This perspective leads to **PUZZLE**, a continuous embedding of geographic space directly from measurable spatial signals, without predefined zones or human-assigned labels. They emerge implicitly through proximity and interaction in the embedding space.
 
@@ -153,22 +153,22 @@ Geometrically, the model learns a **direction field over geographic space**, whe
 Ok, getting off paper territory. I received internal data to validate the concept, I designed a method to model every point and polygon to the H3 grid and created a pipeline to extract features from the raw data. Furthermore I scraped satellite imagery and used a basic CNN to extract image features for each cell as well.
 
 
-Training was possible by an ECC Grand for this concept which was in the form of GPU credits so I had a fully functional environment to test this idea. 
+Training was made possible by an ECC Grant for this concept in the form of GPU credits, so I had a fully functional environment to test this idea.
 
-We managed to extract the full Province of Zuid-Holland into a grid of H3 cells at resolution 9 and extracted the representations after training. The embeddings were then used for multiple tasks such as:
+We managed to extract the full Province of Zuid-Holland into a grid of H3 cells at resolution 9 and extracted the representations after training. The embeddings were then used for multiple tasks:
 
 - The land-use passport (Aligning the embeddings with the primary land-use types defined by the province (residential, agricultural, natural, industrial, etc.)) scoring based upon a semantic set. We first used some manual labeled land-use types to transfer from latent space to language space and then scored the rest of the cells based on the collective distance/a small MLP approach.
 - Twin analysis (Finding similar regions across the province for policy benchmarking)
 - Clustering analysis (Finding emergent zones based on embedding similarity for regional planning)
 
-Then life happened and since we got permission to increase capacity on the AI team at the Province of Zuid-Holland so the primary focussed switched and the project was delayed.
+Then life happened: we got permission to increase capacity on the AI team at the Province of Zuid-Holland, so the primary focus switched and the project was delayed.
 
 
 ---
 
 ## Great minds think alike
 
-The idea of PUZZLE was a composition of existing ideas but novel in it's overall. However  Then came the big news:
+The idea of PUZZLE was a composition of existing ideas but novel in its overall approach. Then came the big news:
 
 https://deepmind.google/blog/alphaearth-foundations-helps-map-our-planet-in-unprecedented-detail/
 

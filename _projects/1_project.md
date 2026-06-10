@@ -12,7 +12,7 @@ related_publications: true
 
 Despite the framing, this project is not fundamentally about tennis.
 
-Since I began learning about machine learning, I have been interested in constructing probabilistic models capable of predicting the outcomes of sporting events. Tennis is particularly appealing for this purpose: each match consists of exactly two players, and the outcome is binary (win/loss). This removes many confounding factors present in team sports—such as coordinated defensive strategies or role specialization—and yields a comparatively clean signal for predictive modeling.
+Since I began learning about machine learning, I have been interested in constructing probabilistic models capable of predicting the outcomes of sporting events. Tennis is particularly appealing for this purpose: each match consists of exactly two players, and the outcome is binary (win/loss). This removes many confounding factors present in team sports, such as coordinated defensive strategies or role specialization, and yields a comparatively clean signal for predictive modeling.
 
 In 2021, I began scraping historical ATP and WTA match data, collecting information on match outcomes, players, surfaces, tournaments, and scores. This effort resulted in a continuously maintained database of professional tennis matches. While the infrastructure for data collection and storage has been in place for several years, the present work represents the first serious attempt to define a principled modeling framework on top of this data.
 
@@ -22,7 +22,7 @@ The ambition of this project is not merely to predict match outcomes, but to con
 
 ## Philosophy
 
-My grandmother is 93 years old and consistently predicts the winners of tennis matches with striking accuracy. This is not the result of randomness, nor of access to betting odds or statistical models, but rather of decades of exposure to the game. She has developed an intuition that appears to capture structure not explicitly encoded in standard metrics. A kind of probablistic view of potential trajectories of a latent space encoding a players state and how they interact. **wink, wink**.
+My grandmother is 93 years old and consistently predicts the winners of tennis matches with striking accuracy. This is not the result of randomness, nor of access to betting odds or statistical models, but rather of decades of exposure to the game. She has developed an intuition that appears to capture structure not explicitly encoded in standard metrics. A kind of probabilistic view of potential trajectories of a latent space encoding a player's state and how they interact. **wink, wink**.
 
 While this intuition is difficult to formalize or validate statistically, it strongly suggests the existence of latent variables governing match outcomes. In particular, tennis appears to involve a significant mental component—performance under pressure, momentum, resilience—that is not fully reflected in surface-level statistics.
 
@@ -30,9 +30,9 @@ As Roger Federer once remarked:
 
 > “Even top ranked tennis players win barely more than half the points they play.”
 
-Match outcomes often come down to a handful of critical points. Break points, set points, match points, etc. Those moments just feel different, and how a player performs under that kind of pressure can completely swing a match. It’s hard to put numbers on this, but it’s one of the main reasons I’m interested in models that can capture latent, time-varying player states.
+Match outcomes often come down to a handful of critical points. Break points, set points, match points. Those moments just feel different, and how a player performs under that kind of pressure can completely swing a match. It’s hard to put numbers on this, but it’s one of the main reasons I’m interested in models that can capture latent, time-varying player states.
 
-A lot of existing models implicitly treat every point the same, using fixed, time-invariant weights. In that world, losing a break point is no different from losing a point at 15–30. That might be mathematically convenient, but it doesn’t really line up with how tennis, or sport in general, actually worksI think.
+A lot of existing models implicitly treat every point the same, using fixed, time-invariant weights. In that world, losing a break point is no different from losing a point at 15–30. That might be mathematically convenient, but it doesn’t really line up with how tennis, or sport in general, actually works I think.
 
 My intuition is that pressure isn’t caused by a single point in isolation. It builds up. It’s the combination of multiple points, the missed chances, the small momentum shifts, that start to matter. Those sequences can change a player’s confidence, decision-making, and execution in ways that don’t immediately reset on the next point. If that intuition is even partially right, then we need models that let state evolve with context and recent history, rather than assuming every point is felt the same.
 
@@ -70,7 +70,7 @@ Conceptually, the model is a dynamic graph with feedback. Within a match, player
 The key insight is to model these two processes separately:
 
 - **Intra-match dynamics (micro)**: high-frequency latent evolution driven by points.
-- **Inter-match dynamics (macro)**: low-frequency, global equilibrium update driven by full match iteractions.
+- **Inter-match dynamics (macro)**: low-frequency, global equilibrium update driven by full match interactions.
 
 Matches are not treated as atomic events; they are treated as *time series* whose internal structure determines how the world-model changes.
 
@@ -143,7 +143,7 @@ p(\text{point}_t = i \mid z_{i,m}^{(p)}(t), z_{j,m}^{(p)}(t), u_m(t))
 \sigma\!\left( g_\phi(u_m(t), z_{i,m}^{(p)}(t), z_{j,m}^{(p)}(t)) \right).
 $$
 
-Now, The the game-win probability and match outcome emerges from the sequence of point outcomes, but crucially: **the match produces an entire latent trajectory**, not just a final win/loss.
+Now, the game-win probability and match outcome emerges from the sequence of point outcomes, but crucially: **the match produces an entire latent trajectory**, not just a final win/loss.
 
 ---
 
@@ -168,7 +168,7 @@ z_{j,m}^{(p)}(T_m) - z_{j,m}^{(p)}(0)
 \right).
 $$
 
-This object $$r_m$$ acts as the bridge: it distills the match outcome in latent space into a signal used to update the global player graph. We purposefully avoid using $$z_{i,m}^{(p)}(T_m)$$ as the new player representation directly, since that would conflate intra-match dynamics with global skill, on some days our true skills and the way we perform in a match can diverge quite a lot. We could therefore day that $$r_m$$ captures the *performance $$\Delta$$* during the match relative to the starting point.
+This object $$r_m$$ acts as the bridge: it distills the match outcome in latent space into a signal used to update the global player graph. We purposefully avoid using $$z_{i,m}^{(p)}(T_m)$$ as the new player representation directly, since that would conflate intra-match dynamics with global skill, on some days our true skills and the way we perform in a match can diverge quite a lot. We could therefore say that $$r_m$$ captures the *performance $$\Delta$$* during the match relative to the starting point.
 
 ---
 

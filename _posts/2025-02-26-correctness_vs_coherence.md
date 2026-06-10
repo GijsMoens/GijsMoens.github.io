@@ -28,8 +28,8 @@ We will talk about systems. A system can be a brain, a person, an organization, 
   This includes the unconstrained truth, the oracle.
 
 - **Observations**  
-  What the system actually receives, observations is direcltly related to the system (we can observe the same world state differently).  
-  Observations can be anything available to system: vision, speach, news, etc.
+  What the system actually receives, observations are directly related to the system (we can observe the same world state differently).  
+  Observations can be anything available to system: vision, speech, news, etc.
 
 - **Internal model**  
   The system’s internal representation of how the world works.  
@@ -37,7 +37,7 @@ We will talk about systems. A system can be a brain, a person, an organization, 
 
 - **Prediction error**  
   The difference between what the model expects and what is observed.  
-  The surprise one experiences when something happens that you did not predicted.
+  The surprise one experiences when something happens that you did not predict.
 
 - **Correctness**  
   The degree to which the model is aligned with the true world state.
@@ -67,7 +67,7 @@ Brains and learning systems reduce prediction error.
 
 Prediction error is not just informational. It is biological. Surprise correlates with arousal, stress, metabolic cost, and effort. Reducing prediction error feels stabilizing and safe.
 
-You pick up a cup of coffee expecting it to be full. You're predicting someones mood based on their facial expression. You drive to work expecting it to take a certain amount of time. Your brain is constantly generating predictions about the world and updating them based on what actually happens. If the coffee was less full, your first joke didn't go as expected or there is road maintanance, your brain experiences prediction error, which motivates you to adjust your expectations or actions to reduce that error in the future.
+You pick up a cup of coffee expecting it to be full. You're predicting someones mood based on their facial expression. You drive to work expecting it to take a certain amount of time. Your brain is constantly generating predictions about the world and updating them based on what actually happens. If the coffee was less full, your first joke didn't go as expected or there is road maintenance, your brain experiences prediction error, which motivates you to adjust your expectations or actions to reduce that error in the future.
 
 We call this biological optimization because it is a fundamental drive in living systems to minimize uncertainty (And this is the full principle about AI, now you can call yourself an expert).
 
@@ -87,9 +87,9 @@ From **Axiom 1** and **Axiom 2**, minimizing prediction error means aligning the
 
 Let's see this in practice:
 
-You make this terrible joke but social norms encourage politeness which leads to observing polite laughter.
+You make a terrible joke but social norms encourage politeness, which leads to observing polite laughter.
 
-**Axiom 1**: You have no way of infering the true world state (the joke was bad) from the observation (people laughed politely).
+**Axiom 1**: You have no way of inferring the true world state (the joke was bad) from the observation (people laughed politely).
 **Axiom 2**: You minimize prediction error by updating your model to expect polite laughter when you tell that joke.
 
 A model can be internally coherent and predict observations well while being poorly aligned with the true world state (you're not funny but still expect polite laughter in the future).
