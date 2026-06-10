@@ -41,7 +41,7 @@ ninja.data = [{
         
           title: "Polarisation as Dimensionality Collapse",
         
-        description: "Polarisation is not disagreement. It is what happens when high-dimensional human beings are compressed into low-dimensional symbolic systems and then judged as if the projection were the person.",
+        description: "Polarisation is what happens when high-dimensional people get compressed into low-dimensional categories and then judged as if the category were the person.",
         section: "Posts",
         handler: () => {
           
