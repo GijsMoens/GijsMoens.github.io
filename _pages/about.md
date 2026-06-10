@@ -31,7 +31,7 @@ I’m Gijs Moens, an AI researcher based in Amsterdam. My work sits at the inter
 
 I’m currently a researcher at the Netherlands Cancer Institute, where I developed [SONIC](https://arxiv.org/abs/2601.19884) (Spectral Oriented Neural Invariant Convolutions), a continuous spectral approach to resolution-invariant image segmentation, accepted at **ICLR 2026**. The core idea: operate in the Fourier domain with learnable oriented spectral modes instead of fixed-size kernels, giving you global receptive fields and resolution invariance with an order of magnitude fewer parameters.
 
-Alongside research, I lead a small AI R&D team at the Province of South Holland, where I architect compliance analytics systems and bridge policy requirements with practical ML solutions. Before that, I spent two years in financial compliance, which gave me an unusual appreciation for how models behave when the stakes are real and the data is messy.
+Until recently, I led a small AI R&D team at the Province of South Holland, where I architected compliance analytics systems and bridged policy requirements with practical ML solutions. Before that, I spent two years in financial compliance, which gave me an unusual appreciation for how models behave when the stakes are real and the data is messy.
 
 I hold an MSc in Artificial Intelligence from the University of Amsterdam (GPA: 8.2/10, focus on geometric deep learning and signal processing) and a BSc in Business Analytics from the VU. I work primarily in Python and C++, with experience across PyTorch, JAX, and CUDA.
 

@@ -1,0 +1,79 @@
+\raggedbottom
+
+% avoid vertical stretching that can cause line collision
+
+% Hyperlinks
+\usepackage{hyperref}
+\hypersetup{pdfborder=0 0 0}
+
+% For drawing a placeholder photo box
+\usepackage{tikz}
+
+% -------------------------------------- Personal data --------------------------------------
+\name{Gijs Joppe}{Moens}
+\title{Curriculum Vitae}
+\address{Amsterdam}{\href{https://gijsmoens.github.io/}{Personal Website}}
+\phone[mobile]{+316~4878~0704}
+\email{gjmoens@gmail.com}
+\social[github]{GijsMoens}
+\social[linkedin]{gijs-moens-051861123}
+\extrainfo{Date of Birth: 17~July~1998 \enspace·\enspace Nationality: Dutch}
+
+\photo[96pt][0.0pt]{CV_Luuk/prof_pic.jpeg}
+
+
+\begin{document}
+\makecvtitle
+
+% -------------------------------------- Professional experience --------------------------------------
+\section{Professional Experience}
+
+\cventry{Sep~2023 -- Present}{Researcher}{Netherlands Cancer Institute}{Amsterdam}{}{
+\begin{itemize}
+  \item Developed SONIC (Spectral Oriented Neural Invariant Convolutions), a continuous spectral approach to resolution-invariant image segmentation. First-author paper accepted at \textbf{ICLR 2026}.
+  \item Achieved performance matching or exceeding nnU-Net with an order of magnitude fewer parameters on 3D medical imaging benchmarks (KiTS, ACDC, AMOS).
+\end{itemize}}
+
+\cventry{Jun~2021 -- Apr~2026}{Lead Researcher}{Province of South Holland}{The Hague}{}{
+\begin{itemize}
+  \item Lead a small AI R\&D team; bridge organisational requirements with feasible ML solutions.
+  \item Architect and prototype a compliance analytics platform for integrity investigations.
+  \item Designed PUZZLE, a self-supervised spatial embedding method for geographic regions using redundancy reduction and proximity-based supervision on H3 grids.
+\end{itemize}}
+
+\cventry{2018 -- 2020}{Compliance Officer}{Various Trust Offices}{The Hague}{}{Ensured adherence to Dutch and EU financial regulations; drafted internal control protocols.}
+
+% -------------------------------------- Education --------------------------------------
+\section{Education}
+
+\cventry{Sep~2022 -- Jul~2024}{M.Sc.~Artificial Intelligence}{University of Amsterdam}{Amsterdam}{}{
+\begin{itemize}
+  \item GPA: 8.2/10
+  \item Focus areas: geometric deep learning, graph neural networks, reinforcement learning, signal processing.
+\end{itemize}}
+\cventry{Sep~2019 -- Jul~2022}{B.Sc.~Business Analytics}{Vrije Universiteit Amsterdam}{Amsterdam}{}{
+\begin{itemize}
+  \item GPA: 7.5/10
+  \item Interdisciplinary programme combining mathematics, computer science, and economics.
+\end{itemize}}
+
+\cventry{Aug~2021 -- Dec~2021}{Exchange Minor}{Hanken School of Economics}{Helsinki}{}{Advanced modules in mathematics and computer science.}
+
+% -------------------------------------- Publications & research --------------------------------------
+\section{Publications \& Research}
+
+\cvitem{}{- Moens, G.~J., Beets-Tan, R., \& Pooch, E.~H.~P. (2026). SONIC: Spectral Oriented Neural Invariant Convolutions. \textit{ICLR 2026}. \href{https://arxiv.org/abs/2601.19884}{arXiv} \enspace·\enspace \href{https://openreview.net/forum?id=qDGiMrUVmc}{OpenReview}}
+\cvitem{}{- Moens, G.~J., de~Witte, J., Göbel, T.~P., \& van~den~Oever, M.~A.~A. (2023). Reproducibility study of fairness‑enhanced node representation learning. \textit{ReScience~C, 9}. \href{https://openreview.net/forum?id=KNp7Zq3KkT0}{OpenReview}}
+\cvitem{}{- Scalar representation on equivariant graph networks for molecular force prediction. \href{https://github.com/Bentgm17/ScalarEMLP-ext}{Code}}
+\cvitem{}{- Enhancing Monte Carlo Tree Search under uncertainty. \href{https://github.com/Bentgm17/MCTS-RAVE-Schnapsen-Bot}{Code}}
+\cvitem{}{- Genetic algorithm for the multi‑trip multi‑vehicle routing problem. \href{https://github.com/Bentgm17/GA-MDVRP}{Code}}
+\cvitem{}{- Full‑stack development of a French homestay booking site. \href{https://stayatchezlevigneron.com/}{Website}}
+
+% -------------------------------------- Technical skills --------------------------------------
+\section{Technical Skills}
+
+\cvitem{}{\textbf{Programming}: Python (advanced), C++, CSS, HTML5, JavaScript, SQL (working proficiency)}
+\cvitem{}{\textbf{Frameworks}: PyTorch, JAX, CUDA, NumPy, Docker, AWS, Git, Neovim}
+\cvitem{}{\textbf{Languages}: Dutch (native), English (fluent)}
+
+\end{document}
